@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .mr-5 {
+  @apply float-left justify-end;
+}
+.header {
+  @apply float-start justify-start;
+} */
