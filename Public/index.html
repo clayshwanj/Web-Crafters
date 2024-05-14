@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="custom.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web-Crafters</title>
@@ -10,7 +11,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="bg-zinc-200">
+  <body class="bg-zinc-200 h-screen w-screen">
     <!-- <nav
       class="bg-slate-600 flex flex-wrap items-center text-base justify-center"
     >
@@ -30,23 +31,31 @@
       >
       </a>
       <div
-        class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center bg-slate-700"
+        class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center"
       >
-        <h1 class="font-extrabold">Web Crafters</h1>
-        <a class="mr-5">Blog</a>
-        <a class="mr-5">Details</a>
-        <a class="mr-5">Trending</a>
-        <a class="mr-5">Contact</a>
+        <a class="mr-5 hover:bg-slate-400">Blog</a>
+        <a class="mr-5 hover:bg-slate-400">Details</a>
+        <a class="mr-5 hover:bg-slate-400">Trending</a>
+        <a class="mr-5 hover:bg-slate-400">Contact</a>
       </div>
     </div>
 
-    <div class="hero section bg-orange-100">
-      <h2 class="font-serif">The best online blog in the world.</h2>
-      <button
-        class="inline-flex items-center bg-yellow-500 border-0 py-1 px-3 mt-4 md:mt-0"
+    <div
+      class="hero bg-orange-100 h-full border-2 flex justify-center items-center"
+    >
+      <div
+        class="bg-my-image bg-no-repeat w-4/5 h-4/5 flex justify-center items-center"
       >
-        Click Me
-      </button>
+        <ul class="text-2xl">
+          <h1 class="font-extrabold">Web Crafters</h1>
+          <h2 class="font-serif">The best online blog in the world.</h2>
+          <button
+            class="inline-flex items-center bg-yellow-500 border-0 py-1 px-3 mt-4 md:mt-0"
+          >
+            Click Me!
+          </button>
+        </ul>
+      </div>
     </div>
     <br />
 
