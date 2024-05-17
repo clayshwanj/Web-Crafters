@@ -12,33 +12,23 @@
     ></script>
   </head>
   <body class="bg-zinc-200 h-screen w-screen">
-    <!-- <nav
-      class="bg-slate-600 flex flex-wrap items-center text-base justify-center"
-    >
-      <ul>
-        <li><h1>Web-Crafters</h1></li>
-        <li><a href="blog">Blog</a></li>
-        <li><a href="details">Details</a></li>
-        <li><a href="trending">Trending</a></li>
-        <li><a href="contact">Contact</a></li>
+    <nav class="flex flex-wrap text-base md:inline">
+      <ul class="bg-slate-700 flex">
+        <li><h1 class="font-extrabold">Web-Crafters</h1></li>
+        <div class="grid-cols-4 flex m-auto">
+          <li><a href="blog" class="hover:bg-slate-400 mr-28">Blog</a></li>
+          <li>
+            <a href="details" class="hover:bg-slate-400 mr-28">Details</a>
+          </li>
+          <li>
+            <a href="trending" class="hover:bg-slate-400 mr-28">Trending</a>
+          </li>
+          <li>
+            <a href="contact" class="hover:bg-slate-400 mr-28">Contact</a>
+          </li>
+        </div>
       </ul>
-    </nav> -->
-    <div
-      class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
-    >
-      <a
-        class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
-      >
-      </a>
-      <div
-        class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center"
-      >
-        <a class="mr-5 hover:bg-slate-400">Blog</a>
-        <a class="mr-5 hover:bg-slate-400">Details</a>
-        <a class="mr-5 hover:bg-slate-400">Trending</a>
-        <a class="mr-5 hover:bg-slate-400">Contact</a>
-      </div>
-    </div>
+    </nav>
 
     <div
       class="hero bg-orange-100 h-full border-2 flex justify-center items-center"
@@ -59,7 +49,7 @@
     </div>
     <br />
 
-    <div class="grid grid-cols-3">
+    <div class="grid grid-cols-3 sm:gap-10">
       <div class="bg-white w-96 hover:bg-slate-100 shadow-2xl mb-5">
         <div>
           <span class="font-bold">Matwana Matatu Culture</span>
@@ -218,6 +208,7 @@
       </div>
     </div>
 
+    <!-- footer section -->
     <footer class="bg-orange-200 py-12">
       <div class="container mx-auto px-2 text-blue-500 mb-5">
         <div class="flex justify-between">
@@ -279,7 +270,12 @@
             >The latest news,articles and sent to your inbox weekly.</span
           >
           <div>
-            <input type="text" name="Text" id="word" />
+            <input
+              type="text"
+              name="Text"
+              id="word"
+              placeholder="Enter your Email"
+            />
             <button
               class="bg-lime-200 text-blue-600 shadow-2xl hover:bg-slate-300"
             >
